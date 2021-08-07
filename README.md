@@ -45,7 +45,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 
 ### Code Splitting
 
@@ -70,4 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
+=======
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295

@@ -1735,7 +1735,11 @@
     "@types/istanbul-lib-report" "*"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@types/jest@*", "@types/jest@^26.0.15":
+=======
+"@types/jest@*":
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 =======
 "@types/jest@*":
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
@@ -1767,11 +1771,14 @@
   integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@types/node@^12.0.0":
   version "12.20.19"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.19.tgz#538e61fc220f77ae4a4663c3d8c3cb391365c209"
   integrity sha512-niAuZrwrjKck4+XhoCw6AAVQBENHftpXw9F4ryk66fTgYaKQ53R4FI7c9vUGGw5vQis1HKBHDR1gcYI/Bq1xvw==
 
+=======
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 =======
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 "@types/normalize-package-data@^2.4.0":
@@ -1790,6 +1797,7 @@
   integrity sha512-DxZZbyMAM9GWEzXL+BMZROWz9oo6A9EilwwOMET2UVu2uZTqMWS5S69KVtuVKaRjCUpcrOXRalet86/OpG4kqw==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@types/prop-types@*":
   version "15.7.4"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
@@ -1797,11 +1805,14 @@
 
 =======
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
+=======
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 "@types/react-dom@^17.0.0":
   version "17.0.9"
@@ -1821,6 +1832,8 @@
 
 =======
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
+=======
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 "@types/resolve@0.0.8":
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-0.0.8.tgz#f26074d238e02659e323ce1a13d041eee280e194"
@@ -1829,11 +1842,14 @@
     "@types/node" "*"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@types/scheduler@*":
   version "0.16.2"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+=======
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 =======
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 "@types/source-list-map@*":
@@ -3868,11 +3884,14 @@ cssstyle@^2.2.0:
     cssom "~0.3.6"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 csstype@^3.0.2:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
   integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
 
+=======
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 =======
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 cyclist@^1.0.1:
@@ -10689,11 +10708,14 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 typescript@^4.1.2:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
   integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
 
+=======
+>>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 =======
 >>>>>>> b7815bc5e616aa2d933f8afa087aa5be8fb69295
 unicode-canonical-property-names-ecmascript@^1.0.4:
