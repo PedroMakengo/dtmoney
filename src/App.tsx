@@ -1,14 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  
-`;
-
+import { GlobalStyle } from './styles/global';
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <div className="container">
+      <h1>Hello World</h1>
+      <GlobalStyle />
+    </div>
    );
 }
 
