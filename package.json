@@ -1,0 +1,8 @@
+{
+  "name": "dtmoney",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PedroMakengo/dtmoney.git",
+  "author": "PedroMakengo <61626420+PedroMakengo@users.noreply.github.com>",
+  "license": "MIT"
+}
