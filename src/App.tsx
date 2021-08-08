@@ -9,7 +9,7 @@ import { GlobalStyle } from './styles/global';
 
 Modal.setAppElement('#root');
 
-export function App() {
+export default function App() {
   const [isNewTransictionModalOpen, setIsNewTransictionModalOpen] = useState(false);
 
   function handleOpenNewTransictionModal() {
