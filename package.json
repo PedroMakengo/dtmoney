@@ -5,6 +5,7 @@
   "author": "PedroMakengo <61626420+PedroMakengo@users.noreply.github.com>",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
