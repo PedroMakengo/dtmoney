@@ -1,6 +1,12 @@
+import { useEffect } from 'react';
+import { api } from '../../service/api';
 import {Container} from './styles';
 
 export function TransictionsTable() {
+  useEffect(() => {
+    api.get('transictions')
+      .then(response => console.log(response.data));
+  }, []);
   return (
     <Container>
       <table>
