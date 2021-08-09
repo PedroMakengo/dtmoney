@@ -1,5 +1,5 @@
 import { Summary } from '../Summary/indext';
-import { TransictionsTable } from '../TransictionsTable';
+import { TransactionsTable } from '../TransactionsTable';
 
 import { Container } from './styles';
 
@@ -7,7 +7,7 @@ export function Dashboard() {
   return (
     <Container>
       <Summary />
-      <TransictionsTable />
+      <TransactionsTable />
     </Container>
   );
 }

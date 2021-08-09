@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 
 import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
-import { NewTransictionModal } from './components/NewTransictionModal';
+import { NewTransactionModal } from './components/NewTransactionModal';
 
 import { GlobalStyle } from './styles/global';
 
@@ -27,7 +27,7 @@ export default function App() {
 
       <Dashboard />
 
-      <NewTransictionModal 
+      <NewTransactionModal 
         isOpen={ isNewTransictionModalOpen } 
         onRequestClose={ handleCloseNewTransictionModal }
       />

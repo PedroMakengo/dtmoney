@@ -12,7 +12,7 @@ interface NewTransictionModalProps {
   onRequestClose: () => void;
 }
 
-export function NewTransictionModal({ isOpen, onRequestClose }: NewTransictionModalProps) {
+export function NewTransactionModal({ isOpen, onRequestClose }: NewTransictionModalProps) {
   const [title, setTitle] = useState('');
   const [value, setValue] = useState(0);
   const [category, setCategory] = useState('');
@@ -28,7 +28,7 @@ export function NewTransictionModal({ isOpen, onRequestClose }: NewTransictionMo
       type 
     };
 
-    api.post('/transictions', data)
+    api.post('/transactions', data)
   }
 
   return(
