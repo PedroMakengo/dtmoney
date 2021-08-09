@@ -1,5 +1,9 @@
 import Modal from 'react-modal';
-import { Container } from './styles';
+
+import incomeImg from '../../assets/income.svg';
+import outcomeImg from '../../assets/outcome.svg';
+
+import { Container ,TransictionTypeContainer } from './styles';
 
 interface NewTransictionModalProps {
   isOpen: boolean;
@@ -26,6 +30,20 @@ export function NewTransictionModal({ isOpen, onRequestClose }: NewTransictionMo
           type="number"
           placeholder="Valor"
         />
+
+        <TransictionTypeContainer>
+          <button type="button">
+            <img src={incomeImg} alt="Entrada" />
+            <span>Entrada</span>
+          </button>
+          
+          <button>
+            <img src={outcomeImg} alt="Saída" />
+            <span>
+              Saída
+            </span>
+          </button>
+        </TransictionTypeContainer>
 
         <input 
           type="text"
