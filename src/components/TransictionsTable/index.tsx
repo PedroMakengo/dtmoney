@@ -3,6 +3,7 @@ import { api } from '../../service/api';
 import {Container} from './styles';
 
 export function TransictionsTable() {
+  // Consumindo a minha api
   useEffect(() => {
     api.get('transictions')
       .then(response => console.log(response.data));
