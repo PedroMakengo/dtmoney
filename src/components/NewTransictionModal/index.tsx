@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import Modal from 'react-modal';
 
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
+import { api } from '../../service/api';
 
 import { Container ,TransictionTypeContainer, RadioBox } from './styles';
 
@@ -12,7 +13,24 @@ interface NewTransictionModalProps {
 }
 
 export function NewTransictionModal({ isOpen, onRequestClose }: NewTransictionModalProps) {
+  const [title, setTitle] = useState('');
+  const [value, setValue] = useState(0);
+  const [category, setCategory] = useState('');
   const [type, setType] = useState('deposit');
+
+  function handleCreateTransiction(event: FormEvent) {
+    event.preventDefault();
+
+    const data = {
+      title, 
+      value, 
+      category, 
+      type 
+    };
+
+    api.post('/transictions', data)
+  }
+
   return(
     <Modal
         isOpen={isOpen}
@@ -21,16 +39,20 @@ export function NewTransictionModal({ isOpen, onRequestClose }: NewTransictionMo
         className="react-modal-content"
         >
 
-      <Container>
+      <Container onSubmit={handleCreateTransiction}>
         <h2>Cadastrar transação</h2>
 
         <input 
           placeholder="Título"
+          value={title}
+          onChange={(event) => setTitle(event.target.value) }
         />
 
         <input 
           type="number"
           placeholder="Valor"
+          value={value}
+          onChange={(event) => setValue(Number(event.target.value))}
         />
 
         <TransictionTypeContainer>
@@ -60,6 +82,8 @@ export function NewTransictionModal({ isOpen, onRequestClose }: NewTransictionMo
         <input 
           type="text"
           placeholder="Categória"
+          value={category}
+          onChange={(event) => setCategory(event.target.value)}
         />
 
         <button type="submit">
