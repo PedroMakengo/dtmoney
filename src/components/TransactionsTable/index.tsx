@@ -21,10 +21,15 @@ export function TransactionsTable() {
               <tr key={transaction.id}>
                 <td>{transaction.title}</td>
                 <td className={transaction.type}>
-                  {new Intl.NumberFormat('pt-BR', {
+                  { transaction.type === 'deposit' ? new Intl.NumberFormat('pt-BR', {
                     style: 'currency',
                     currency: 'BRL'
-                  }).format(transaction.amout)}
+                  }).format(transaction.amout): '-' +
+                  new Intl.NumberFormat('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL'
+                  }).format(transaction.amout)
+                  }
                 </td>
                 <td>{transaction.category}</td>
                 <td>{

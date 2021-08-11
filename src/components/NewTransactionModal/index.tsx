@@ -21,15 +21,21 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransictionMo
   const [category, setCategory] = useState('');
   const [type, setType] = useState('deposit');
 
-  function handleCreateTransiction(event: FormEvent) {
+  async function handleCreateTransiction(event: FormEvent) {
     event.preventDefault();
 
-    createTransaction({
+    await createTransaction({
       title,
       type,
       amout,
       category
-    })
+    });
+
+    setTitle('');
+    setAmout(0);
+    setCategory('');
+    setType('deposit');
+    onRequestClose();
   }
 
   return(
