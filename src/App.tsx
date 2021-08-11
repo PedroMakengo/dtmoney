@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
 import { NewTransactionModal } from './components/NewTransactionModal';
+import { TransactionsContext } from './TransactionsContext';
 
 import { GlobalStyle } from './styles/global';
 
@@ -22,7 +23,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <TransactionsContext.Provider value={[]}>
       <Header onOpenNewTransictionModal={handleOpenNewTransictionModal} />
 
       <Dashboard />
@@ -33,6 +34,6 @@ export default function App() {
       />
 
       <GlobalStyle />
-    </>
+    </TransactionsContext.Provider>
    );
 }
