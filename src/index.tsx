@@ -9,6 +9,28 @@ createServer({
   models: {
     transaction: Model,
   },
+  seeds(server) {
+    server.db.loadData({
+      transactions: [
+        {
+          id: 1,
+          title: "Freelancer de website",
+          type: "deposit",
+          category: "Dev",
+          amount: 6000,
+          createdAt: new Date("2020-04-12 00:00:00"),
+        },
+        {
+          id: 2,
+          title: "Aluguer",
+          type: "withdraw",
+          category: "Casa",
+          amount: 1100,
+          createdAt: new Date("2020-04-12 00:00:00"),
+        },
+      ],
+    });
+  },
   routes() {
     this.namespace = "api";
 
@@ -18,6 +40,7 @@ createServer({
 
     this.post("/transactions", (schema, request) => {
       const data = JSON.parse(request.requestBody);
+
       return schema.create("transaction", data);
     });
   },
