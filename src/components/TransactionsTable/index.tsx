@@ -25,12 +25,6 @@ export function TransactionsTable() {
             <td>Desenvolvimento</td>
             <td>20/02/2021</td>
           </tr>
-          <tr>
-            <td>Desenvolvimento de website</td>
-            <td className="withdraw">-R$12.00</td>
-            <td>Desenvolvimento</td>
-            <td>20/02/2021</td>
-          </tr>
         </tbody>
       </table>
     </Container>
