@@ -7,8 +7,9 @@ import { TransactionsContext } from "../../TransactionContext";
 
 import { Container } from "./styles";
 export function Sumary() {
-  const data = useContext(TransactionsContext);
-  console.log(data);
+  const transactions = useContext(TransactionsContext);
+
+  console.log(transactions);
 
   return (
     <Container>

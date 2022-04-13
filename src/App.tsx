@@ -33,6 +33,6 @@ export function App() {
       />
 
       <GlobalStyle />
-    </Transactions>
+    </TransactionsProvider>
   );
 }
