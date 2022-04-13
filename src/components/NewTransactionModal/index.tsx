@@ -29,7 +29,7 @@ export function NewTransactionModal({
   function handleCreateNewTransaction(event: FormEvent) {
     event.preventDefault();
 
-    createTransaction({ title, amount });
+    createTransaction({ title, amount, type, category });
   }
 
   return (
