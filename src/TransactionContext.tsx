@@ -10,11 +10,23 @@ interface TransactionProps {
   createdAt: string;
 }
 
+// O transaction input vai herdar todos os campos da minha interface
+// TransactionProps menos o id e a createdAt
+
+type TransactionInput = Omit<TransactionProps, "id" | "createdAt">;
+
 interface TransactionProviderProps {
   children: ReactNode;
 }
 
-export const TransactionsContext = createContext<TransactionProps[]>([]);
+interface TransactionsContextData {
+  transactions: TransactionProps[];
+  createTransaction: (transaction: TransactionInput) => void;
+}
+
+export const TransactionsContext = createContext<TransactionsContextData>(
+  {} as TransactionsContextData
+);
 
 export function TransactionsProvider({ children }: TransactionProviderProps) {
   const [transactions, setTransactions] = useState<TransactionProps[]>([]);
@@ -24,8 +36,14 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
       .then(({ data }) => setTransactions(data.transactions));
   }, []);
 
+  // Lhe dar com a parte do meu formulário
+
+  function createTransaction(transaction: TransactionInput) {
+    api.post("/transactions", transaction);
+  }
+
   return (
-    <TransactionsContext.Provider value={transactions}>
+    <TransactionsContext.Provider value={{ transactions, createTransaction }}>
       {children}
     </TransactionsContext.Provider>
   );
