@@ -9,6 +9,7 @@ import { Container } from "./styles";
 export function Sumary() {
   const data = useContext(TransactionsContext);
   console.log(data);
+
   return (
     <Container>
       <div>
