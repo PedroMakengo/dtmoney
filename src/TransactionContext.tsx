@@ -37,7 +37,6 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
   }, []);
 
   // Lhe dar com a parte do meu formulário
-
   async function createTransaction(transactionInput: TransactionInput) {
     const response = await api.post("/transactions", {
       ...transactionInput,
