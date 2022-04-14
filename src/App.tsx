@@ -13,10 +13,12 @@ export function App() {
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] =
     useState(false);
 
+  // Função para abrir a modal
   function handleOpenNewTransactionModal() {
     setIsNewTransactionModalOpen(true);
   }
 
+  // Função para fechar a modal
   function handleCloseNewTransactionModal() {
     setIsNewTransactionModalOpen(false);
   }
